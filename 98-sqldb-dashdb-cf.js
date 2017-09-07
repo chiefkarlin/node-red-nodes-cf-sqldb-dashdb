@@ -96,6 +96,7 @@ module.exports = function(RED) {
 
         try {
            console.log("dashDB output node: Opening db connection...");
+	   db.debug(true);
            db.openSync(connString);
            console.log("dashDB output node: Connection open");
 	}
